@@ -99,7 +99,7 @@ tmap_save(Stores_Map, filename = "Stores_Map.png", width = 2550, height = 3300, 
 #Hospital Map
 Hospital_Map <- tm_shape(CommAreas) + tm_borders(alpha = 0.3) + tm_fill(col = "grey90") +
 tm_shape(Hosp_New) +
-  tm_polygons("HospCt", style = "equal", n=5, pal = "Reds") +
+  tm_polygons("HospCt", style = "cat", pal = "Reds") +
   tm_layout(
     main.title = "Hospitals by Community Area",
     title.size = 1.2,
